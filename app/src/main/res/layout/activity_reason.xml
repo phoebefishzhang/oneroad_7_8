@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reason">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="約束原因"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="非高危險仍需約束者，需填寫約束原因"
+                android:textColor="@color/red"
+                android:textSize="20dp"></TextView>
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/r1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="因認知/感官障礙"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/r2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="因預防跌倒"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="因行為混亂造成自傷或傷人"
+
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/r3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="自傷行為"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/r4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="行為混亂無法配合"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/r5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="麻醉為甦醒，手術後轉入單位"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/r6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="誘導性麻醉插管，意識未甦醒"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="因治療因素:"
+
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/r7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="評估意識程度，暫停使用鎮靜劑"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/r8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="準備脫離呼吸器，鎮靜止痛劑調降"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/r9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="CVVH,IABP需約束單一肢體"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/r10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他:"
+                    android:textSize="24sp" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/otherreason"
+                android:layout_width="395dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textSize="24dp"
+                android:visibility="invisible"></EditText>
+
+            <Button
+                android:id="@+id/next"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/shape"
+                android:text="完   成"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

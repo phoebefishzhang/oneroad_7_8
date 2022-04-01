@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EatMedicine">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.08"
+        android:src="@drawable/hosp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="口服藥物"
+                android:textColor="@color/black"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/c_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onCheckVoxClicked"
+                android:text="無使用止痛藥物"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"></CheckBox>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="NSAIDs非類固醇類消炎止痛藥"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"></TextView>
+
+            <CheckBox
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckVoxClicked"
+                android:text="Ibuprofen"
+                android:textColor="@color/black"
+                android:textSize="28dp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckVoxClicked"
+                android:text="Naproxen"
+                android:textColor="@color/black"
+                android:textSize="28dp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/c3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckVoxClicked"
+                android:text="Diclofenac"
+                android:textColor="@color/black"
+                android:textSize="28dp"></CheckBox>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:onClick="onCheckVoxClicked"
+                android:text="Opioid  analgesics鴉片類止痛藥"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"></TextView>
+
+            <CheckBox
+                android:id="@+id/c4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckVoxClicked"
+                android:text="codeine"
+                android:textColor="@color/black"
+                android:textSize="28dp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/c5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckVoxClicked"
+                android:text="Tramadol"
+                android:textColor="@color/black"
+                android:textSize="28dp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/c6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckVoxClicked"
+                android:text="fentanyl(貼片)"
+                android:textColor="@color/black"
+                android:textSize="28dp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/c7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckVoxClicked"
+                android:text="Morphine"
+                android:textColor="@color/black"
+                android:textSize="28dp"></CheckBox>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Acetaminophen 乙醯胺酚"
+                android:textColor="@color/black"
+                android:textSize="28dp"
+                android:textStyle="bold"></TextView>
+
+            <CheckBox
+                android:id="@+id/c8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckVoxClicked"
+                android:text="barbiturates"
+                android:textColor="@color/black"
+                android:textSize="28dp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/c9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckVoxClicked"
+                android:text="phenytoin"
+                android:textColor="@color/black"
+                android:textSize="28dp"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/c10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onCheckVoxClicked"
+                android:text="rifampin"
+                android:textColor="@color/black"
+                android:textSize="28dp"></CheckBox>
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape"
+                android:onClick="onClick"
+                android:text="下   一   頁"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

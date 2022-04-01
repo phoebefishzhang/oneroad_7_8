@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="leg">
+        <item>-未填-</item>
+        <item>5分(Normal):正常</item>
+        <item>4分(Good)：良好</item>
+        <item>3分(Fair)：尚可</item>
+        <item>2分(Poor)：不佳</item>
+        <item>1分(Trace)：微弱</item>
+        <item>0分(None)：無反應</item>
+    </string-array>
+    <string-array name="one">
+        <item>雙上肢約束</item>
+        <item>上肢單側肢體約束</item>
+    </string-array>
+    <string-array name="all">
+        <item>雙上肢約束</item>
+        <item>雙下肢約束</item>
+        <item>胸部約束</item>
+        <item>四肢約束</item>
+        <item>上肢單側肢體約束</item>
+        <item>下肢單側肢體約束</item>
+    </string-array>
+    <string-array name="eyes">
+        <item>-未填-</item>
+        <item>4分</item>
+        <item>3分</item>
+        <item>2分</item>
+        <item>1分</item>
+    </string-array>
+    <string-array name="move">
+        <item>-未填-</item>
+        <item>6分</item>
+        <item>5分</item>
+        <item>4分</item>
+        <item>3分</item>
+        <item>2分</item>
+        <item>1分</item>
+    </string-array>
+    <string-array name="talk">
+        <item>-未填-</item>
+        <item>5分</item>
+        <item>4分</item>
+        <item>3分</item>
+        <item>2分</item>
+        <item>1分</item>
+        <item>T或E</item>
+    </string-array>
+    <string-array name="cpot1">
+        <item>-未填-</item>
+        <item>0:輕鬆自然</item>
+        <item>1:憂愁、皺眉</item>
+        <item>2:痛苦狀、咬緊牙關</item>
+    </string-array>
+    <string-array name="cpot2">
+        <item>-未填-</item>
+        <item>0:放鬆自然</item>
+        <item>1:偶不自主運動或略僵硬</item>
+        <item>2:掙扎、扭動或極僵硬</item>
+    </string-array>
+    <string-array name="cpot3">
+        <item>-未填-</item>
+        <item>0:自然平順</item>
+        <item>1:偶爾快或奮力</item>
+        <item>2:持續快或費力</item>
+    </string-array>
+    <string-array name="cpot4">
+        <item>-未填-</item>
+        <item>0:沒有異常的聲音</item>
+        <item>1:偶爾呻吟</item>
+        <item>2:大聲呻吟、哭泣</item>
+    </string-array>
+    <string-array name="cpot5">
+        <item>-未填-</item>
+    <item>0:不需要</item>
+    <item>1:需要</item>
+    <item>2:無法安撫</item>
+</string-array>
+
+
+</resources>

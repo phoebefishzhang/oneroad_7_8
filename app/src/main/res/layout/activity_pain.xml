@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pain">
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.08"
+        android:src="@drawable/hosp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+    </ImageView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center_horizontal"
+        android:text="疼痛評估"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:text="*三種疼痛評估擇一填寫"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="@color/red"
+        android:layout_marginLeft="20dp"></TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal"
+    android:layout_marginBottom="50dp"
+    android:layout_marginTop="120dp">
+
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:text="Cpot疼痛觀察\n(氣管內管/氣切)"
+        android:textColor="@color/black"
+        android:textSize="30dp"></TextView>
+
+    <Button
+        android:text="選擇"
+        android:textSize="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_blue"
+        android:onClick="onClick"
+        android:layout_gravity="center"
+        android:id="@+id/b1"
+        android:textColor="@color/white">
+    </Button>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="60dp">
+        <TextView
+            android:text="NRS/VAS"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"></TextView>
+        <Button
+            android:id="@+id/b2"
+            android:text="選擇"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_blue"
+            android:onClick="onClick"
+            android:textColor="@color/white">
+        </Button>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:text="FRS"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_marginLeft="20dp"></TextView>
+        <Button
+            android:id="@+id/b3"
+            android:text="選擇"
+            android:textSize="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_blue"
+            android:onClick="onClick"
+            android:textColor="@color/white">
+        </Button>
+    </LinearLayout>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

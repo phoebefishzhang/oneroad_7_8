@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rass_explan">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_horizontal"
+            android:text="RASS評估表說明"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp">
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="40dp"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:text="有攻擊性[有暴力行為]"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:text="非常躁動[試著拔除呼吸管、鼻胃管或靜脈點滴]"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:text="躁動焦慮[身體激烈移動，無法配合呼吸器]"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:text="不安焦慮[焦慮緊張、但身體只有輕微移動]"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:text="平靜休息[清醒，自然狀態]"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:gravity="center"
+                            android:text="-1"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:text="昏昏欲睡[沒有完全清醒，但可維持清醒超過十秒]  "
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:gravity="center"
+                            android:text="-2"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:text="輕度鎮靜[無法維持清醒超過十秒]"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:gravity="center"
+                            android:text="-3"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:text="中度鎮靜[對聲音有反應]"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:gravity="center"
+                            android:text="-4"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:text="重度鎮靜[對身體刺激有反應]"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:gravity="center"
+                            android:text="-5"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:text="昏迷[對聲音及身體刺激都沒有反應]"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

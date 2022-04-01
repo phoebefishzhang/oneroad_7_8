@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".explan2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="動作反應說明"
+        android:layout_marginTop="10dp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.2"
+        android:text="6分 : 可遵照指示動作(譬如要他舉手，就會舉手)\n5分 : 神智尚可知道痛在何處(捏他，他手會來揮開你的手)\n4分 : 對痛的刺激只有退縮反應(捏他，他只會手彎起來，像胎兒)\n3分 : 大腦皮質功能喪失。對刺激都是兩腳僵硬打直，兩手向上扭曲。\n2分 : 大腦中腦都功能喪失。對刺激都是兩腳僵硬打直，兩首向下扭曲。\n1分 : 什麼反應都沒有。"
+        android:textColor="@color/black"
+        android:textSize="23dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"></TextView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

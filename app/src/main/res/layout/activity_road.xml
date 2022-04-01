@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".road">
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.08"
+        android:src="@drawable/hosp"
+        ></ImageView>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="管路留置(不含靜脈留置針)"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <CheckBox
+            android:id="@+id/CB_ENDO"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" ENDO"
+            android:textSize="25dp"
+            android:onClick="onCheckVoxClicked"/>
+        <CheckBox
+            android:id="@+id/CB_CPV"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" CPV"
+            android:textSize="25dp"
+            android:onClick="onCheckVoxClicked"/>
+
+        <CheckBox
+            android:id="@+id/CB_Doublelumen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" Double lumen"
+            android:textSize="25dp"
+            android:onClick="onCheckVoxClicked"/>
+        <CheckBox
+            android:id="@+id/CB_Asheath"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" A-sheath"
+            android:textSize="25dp"
+            android:onClick="onCheckVoxClicked"/>
+
+        <CheckBox
+            android:id="@+id/CB_Vsheath"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" V-sheath"
+            android:textSize="25dp"
+            android:onClick="onCheckVoxClicked"/>
+
+        <CheckBox
+            android:id="@+id/CB_NG"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" NG (ND)"
+            android:textSize="25dp"
+            android:onClick="onCheckVoxClicked"/>
+
+        <CheckBox
+            android:id="@+id/CB_IABP"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" IABP"
+            android:textSize="25dp"
+            android:onClick="onCheckVoxClicked"/>
+
+        <CheckBox
+            android:id="@+id/CB_CVVH"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" CVVH"
+            android:textSize="25dp"
+            android:onClick="onCheckVoxClicked"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/CB_other1"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:onClick="onCheckVoxClicked"
+                android:text=" 其他:"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/other_road1Name"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+
+                android:hint="管路名稱"
+                android:textSize="20dp"
+                android:visibility="invisible"></EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/CB_other2"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:onClick="onCheckVoxClicked"
+                android:text=" 其他:"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/other_road2Name"
+                android:layout_width="163dp"
+                android:layout_height="wrap_content"
+
+                android:hint="管路名稱"
+                android:textSize="20dp"
+                android:visibility="invisible"></EditText>
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/CB_none"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text=" 無"
+            android:textSize="25dp"
+            android:onClick="onCheckVoxClicked"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shape"
+                android:onClick="onClick"
+                android:text="下  一  頁"
+                android:textSize="18dp"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".rass">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="RASS評估表"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/rassexplan"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="#00000000"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/light"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="25dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/b11"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"></RadioButton>
+                    <RadioButton
+                        android:id="@+id/b1"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#ffb7dd"
+                        android:gravity="center"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/b2"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#ffb7dd"
+                        android:gravity="center"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/b3"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#ffb7dd"
+                        android:gravity="center"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/b4"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#ffb7dd"
+                        android:gravity="center"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/b5"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#ffddaa"
+                        android:gravity="center"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/b6"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#ffddaa"
+                        android:gravity="center"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/b7"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#ffddaa"
+                        android:gravity="center"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/b8"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#99ff99"
+                        android:gravity="center"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/b9"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#99ff99"
+                        android:gravity="center"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/b10"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginHorizontal="1dp"
+                        android:layout_marginBottom="1dp"
+                        android:background="#99ff99"
+                        android:gravity="center"></RadioButton>
+
+
+                </RadioGroup>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TableRow>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#FFFFFF"
+                            android:gravity="center"
+                            android:text="未使用鎮靜藥物"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                    </TableRow>
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:gravity="center"
+                            android:text="4"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:text="有攻擊性"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:text="非常躁動"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:text="躁動焦慮"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="60dp"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffb7dd"
+                            android:text="不安焦慮"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:gravity="center"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:text="平靜休息"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:gravity="center"
+                            android:text="-1"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:text="昏昏欲睡"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:gravity="center"
+                            android:text="-2"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#ffddaa"
+                            android:text="輕度鎮靜"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:gravity="center"
+                            android:text="-3"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:text="中度鎮靜"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:gravity="center"
+                            android:text="-4"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:text="重度鎮靜"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+
+                        <TextView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:gravity="center"
+                            android:text="-5"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:layout_marginBottom="1dp"
+                            android:layout_weight="1"
+                            android:background="#99ff99"
+                            android:text="昏迷"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="25dp" />
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/red"
+            android:textSize="25dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        <Button
+            android:id="@+id/next"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape"
+            android:onClick="onClick"
+            android:text="下一頁"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

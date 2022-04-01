@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".takecare">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="約束護理"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="bold"></TextView>
+
+
+        <CheckBox
+            android:id="@+id/CB1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="有自傷行為或管路自拔疑慮時，需至少每15分鐘探視及評估一次觀察約束部位的血液循
+環、神經功能及皮膚狀況(無蒼白、發紺、冰冷、麻木、感覺異常)"
+            android:textSize="22dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/CB2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="被約束的部位無瘀青、皮膚破損情形"
+            android:textSize="22dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/CB3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="約束工具能被正確有效的固定於不可移動床體或是床坐的位置"
+            android:textSize="22dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/CB4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="被約束的部位水腫給予抬高肢體"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/CB5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="約束帶接觸病人肢體部位的肢體需有保護墊保護、能維持適當鬆緊度 (以能伸入1-2根手指)"
+            android:textSize="22dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/CB6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="每2小時協助更換姿勢及輪流四肢放鬆約束帶五分鐘及並給予活動肢體"
+            android:textSize="22dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+        <CheckBox
+            android:id="@+id/CB7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="約束帶固定與手部之間的距離不可拉扯到身上的侵入性管路"
+            android:textSize="22dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/CB8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="評估飲水需求q2h"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+
+        <CheckBox
+            android:id="@+id/CB9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="評估排泄需求q2h"
+            android:textSize="22dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"/>
+        <TextView
+            android:text="*確認皆已完成，並點選按鈕，將會為您登出此病人"
+            android:textSize="16dp"
+            android:textColor="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <Button
+            android:id="@+id/allfinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape"
+            android:onClick="onClick"
+            android:text="完成"
+            android:textColor="@color/white"
+            android:textSize="18dp"></Button>
+    </LinearLayout>
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

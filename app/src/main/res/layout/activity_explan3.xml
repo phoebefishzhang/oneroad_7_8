@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".explan3">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="語言反應說明"
+        android:layout_marginTop="10dp"
+        android:textColor="#3F51B5"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="5分 : 言語正常。\n4分 : 言語判斷力喪失。胡言亂語。\n3分 : 嗜睡，說幾句就昏睡。\n2分 : 有出聲，但只是呻吟。\n1分 : 怎麼刺激都不出聲(言語反應喪失)\nT或E:氣切或氣管內管"
+        android:textSize="20dp"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView1"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

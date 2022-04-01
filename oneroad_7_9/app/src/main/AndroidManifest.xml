@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.oneroad_7_8">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Oneroad_7_8">
+        <activity android:name=".explan8"></activity>
+        <activity android:name=".table" />
+        <activity android:name=".test1_1" />
+        <activity android:name=".reason" />
+        <activity android:name=".explan7" />
+        <activity android:name=".explan6" />
+        <activity
+            android:name=".scan2"
+            android:exported="true" />
+        <activity android:name=".scan" />
+        <activity android:name=".rass_explan" />
+        <activity android:name=".takecare" />
+        <activity android:name=".tools" />
+        <activity android:name=".third_main" />
+        <activity android:name=".second_main" />
+        <activity android:name=".explan5" />
+        <activity android:name=".test6" />
+        <activity android:name=".test5" />
+        <activity android:name=".cpot" />
+        <activity android:name=".rass" />
+        <activity android:name=".explan4" />
+        <activity android:name=".test1_2" />
+        <activity android:name=".explan3" />
+        <activity android:name=".explan2" />
+        <activity android:name=".explan1" />
+        <activity android:name=".patientlogin" />
+        <activity android:name=".nurselogin" />
+        <activity android:name=".finish" />
+        <activity android:name=".medicine" />
+        <activity android:name=".road" />
+        <activity android:name=".test4" />
+        <activity android:name=".test3" />
+        <activity android:name=".test2" />
+        <activity android:name=".test1" />
+        <activity android:name=".start" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

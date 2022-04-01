@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".table">
+
+    <ScrollView
+        android:id="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_horizontal"
+                android:text="高危身體約束評估量表"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="750dp"
+                    android:layout_height="match_parent">
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginVertical="20dp"
+                        android:background="#666666">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="評估項目\n/分數"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="75dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="4分"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:layout_width="75dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="3分"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:layout_width="75dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="2分"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold"></TextView>
+
+                            <TextView
+                                android:layout_width="75dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:layout_marginTop="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="1分"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold"></TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="75dp"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="意識程度"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/a4"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/a3"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/a2"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/a1"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:srcCompat="@drawable/white" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="75dp"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="管路留置(不含靜脈留置針)"
+                                android:textColor="@color/black"
+                                android:textSize="18dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/b4"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:srcCompat="@drawable/nono" />
+
+                            <ImageView
+                                android:id="@+id/b3"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/b2"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/b1"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:srcCompat="@drawable/white" />
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="75dp"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="肌肉力量"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/c4"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                app:srcCompat="@drawable/nono" />
+
+                            <ImageView
+                                android:id="@+id/c3"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/c2"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/c1"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="75dp"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="身體移動力"
+                                android:textColor="@color/black"
+                                android:textSize="19dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/d4"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/nono" />
+
+                            <ImageView
+                                android:id="@+id/d3"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/d2"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/d1"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="75dp"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="反抗行為"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/e4"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/e3"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/nono" />
+
+                            <ImageView
+                                android:id="@+id/e2"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/e1"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="75dp"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="陪伴者"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/f4"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/nono" />
+
+                            <ImageView
+                                android:id="@+id/f3"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/f2"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/f1"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/nono" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="75dp"
+                                android:layout_marginHorizontal="1dp"
+                                android:layout_marginBottom="1dp"
+                                android:background="#77DDFF"
+                                android:gravity="center"
+                                android:text="精神行為"
+                                android:textColor="@color/black"
+                                android:textSize="22dp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/g4"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/g3"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/g2"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+
+                            <ImageView
+                                android:id="@+id/g1"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+
+                                app:srcCompat="@drawable/white" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

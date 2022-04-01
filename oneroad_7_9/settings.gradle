@@ -1,0 +1,2 @@
+rootProject.name = "oneroad_7_8"
+include ':app'

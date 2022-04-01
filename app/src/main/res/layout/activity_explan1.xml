@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".explan1">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="睜眼反應說明"
+        android:layout_marginTop="10dp"
+        android:textColor="#3F51B5"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="4分 : 眼睛自發性的睜開著。\n3分 : 眼睛對聲音會睜開(譬如叫他，他會睜開眼睛\n2分 : 受痛刺激時會睜開眼睛(譬如捏他，他會睜開眼睛)\n1分 : 怎麼刺激，眼睛都不會睜開(反應喪失)"
+        android:textSize="23dp"
+        android:lineSpacingExtra="2dp"
+        android:lineSpacingMultiplier="1.2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView1"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

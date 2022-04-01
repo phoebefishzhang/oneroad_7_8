@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".medicine">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-88dp"
+            tools:layout_editor_absoluteY="-16dp">
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="藥物劑量計算與填寫"
+                android:textColor="@color/black"
+                android:textSize="35dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center|left"
+                android:textColor="@color/black"
+                android:textSize="22dp"></TextView>
+
+            <TextView
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="22dp"></TextView>
+
+            <TextView
+                android:id="@+id/c2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:textSize="22dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/C"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cisatracurium"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/CE"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="20dp"
+                    android:visibility="invisible"></EditText>
+
+                <TextView
+                    android:id="@+id/t1"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">\
+
+                <CheckBox
+                    android:id="@+id/D"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dexmedetomidine"
+                    android:textSize="20dp"
+                    />
+
+                <EditText
+                    android:id="@+id/DE"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="20dp"
+                    android:visibility="invisible"></EditText>
+
+                <TextView
+                    android:id="@+id/t2"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/F_dilution"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fentanyl(稀釋)"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/FE_dilution"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="20dp"
+                    android:visibility="invisible"></EditText>
+
+                <TextView
+                    android:id="@+id/t3_dilution"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/F"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Fentanyl"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/FE"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="20dp"
+                    android:visibility="invisible"></EditText>
+
+                <TextView
+                    android:id="@+id/t3"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/M_dilution"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dormicum(稀釋)"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/ME_dilution"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="20dp"
+                    android:visibility="invisible"></EditText>
+
+                <TextView
+                    android:id="@+id/t4_dilution"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/M"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Dormicum"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/ME"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="20dp"
+                    android:visibility="invisible"></EditText>
+
+                <TextView
+                    android:id="@+id/t4"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/P"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Propofol"
+                    android:textSize="20dp" />
+
+                <EditText
+                    android:id="@+id/PE"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="20dp"
+                    android:visibility="invisible"></EditText>
+
+                <TextView
+                    android:id="@+id/t5"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/othermed1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他:"
+                    android:textSize="20dp"></CheckBox>
+
+                <EditText
+                    android:id="@+id/othermed1Name"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+
+                    android:hint="藥物名稱"
+                    android:textSize="20dp"
+                    android:visibility="invisible"></EditText>
+
+                <EditText
+                    android:id="@+id/othermed1E"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="24dp"
+                    android:visibility="invisible"></EditText>
+
+                <TextView
+                    android:id="@+id/t6"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/othermed2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="其他:"
+                    android:textSize="20dp"></CheckBox>
+
+                <EditText
+                    android:id="@+id/othermed2Name"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+
+                    android:hint="藥物名稱"
+                    android:textSize="20dp"
+                    android:visibility="invisible"></EditText>
+
+                <EditText
+                    android:id="@+id/othermed2E"
+                    android:layout_width="70dp"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="24dp"
+                    android:visibility="invisible"></EditText>
+
+                <TextView
+                    android:id="@+id/t7"
+                    android:layout_width="82dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="20dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="#000000"></View>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目前體重:"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/eW"
+                    android:layout_width="61dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number|numberDecimal"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/tkg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="kg,為您計算建議流速如下:"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#AAAAAA"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="15dp">
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/med"
+                            android:layout_width="140dp"
+                            android:layout_height="25dp"
+                            android:text="藥物"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"/>
+
+                        <TextView
+                            android:id="@+id/howmuch"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:text="常用劑量"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"/>
+
+                        <TextView
+                            android:id="@+id/howtodo"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:text="常用配置"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"/>
+
+                        <TextView
+                            android:id="@+id/howfast"
+                            android:layout_width="110dp"
+                            android:layout_height="25dp"
+                            android:text="流速"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"/>
+
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/C2"
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:text="Cisatracurium\n(Nimbex)"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"/>
+
+                        <TableLayout>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cmuch1"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text="0.5~10 mcg/kg/min"
+                                    android:textSize="16dp"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"/>
+
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cmuch2"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text="3 mcg/kg/min"
+                                    android:textSize="16dp"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"/>
+
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cmuch3"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text="0.5~10mcg/kg/min"
+                                    android:textSize="16dp"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"/>
+
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cmuch4"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text="3 mcg/kg/min"
+                                    android:textSize="16dp"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"/>
+
+                            </TableRow>
+                        </TableLayout>
+
+                        <TableLayout>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cdo1"
+                                    android:layout_width="130dp"
+                                    android:layout_height="50dp"
+                                    android:text="10 amps/200 ml"
+                                    android:textSize="16dp"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp" />
+
+                            </TableRow>
+
+                            <TextView
+                                android:id="@+id/cdo2"
+                                android:layout_width="110dp"
+                                android:layout_height="50dp"
+                                android:text=""
+                                android:textSize="16dp"
+                                android:background="#FFFFFF"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp" />
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cdo3"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text="不稀釋"
+                                    android:textSize="16dp"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"/>
+
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cdo4"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text=""
+                                    android:textSize="16dp"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp" />
+
+                            </TableRow>
+
+
+                        </TableLayout>
+
+                        <TableLayout>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cfast1"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text=""
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginBottom="1dp"/>
+
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cfast2"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text=""
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginBottom="1dp"/>
+
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cfast3"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text=""
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginBottom="1dp" />
+
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/cfast4"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text=""
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginBottom="1dp" />
+
+                            </TableRow>
+                        </TableLayout>
+
+
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/D2"
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:text="Dexmedetomidine\n(precedex)"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp" />
+
+                        <TextView
+                            android:id="@+id/dmuch"
+                            android:layout_width="110dp"
+                            android:layout_height="50dp"
+                            android:text="0.2~0.7 mcg/kg/min"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"/>
+
+                        <TextView
+                            android:id="@+id/ddo"
+                            android:layout_width="110dp"
+                            android:layout_height="50dp"
+                            android:text="1 vial/50 ml"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"/>
+
+                        <TextView
+                            android:id="@+id/dfast"
+                            android:layout_width="110dp"
+                            android:layout_height="50dp"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="1dp"/>
+
+
+                    </TableRow>
+
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/F2"
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:text="Fentanyl"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp" />
+
+                        <TableLayout>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/fmuch"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text="50~100 mcg/hr"
+                                    android:textSize="16dp"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp" />
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/fmuch2"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text="50~100 mcg/hr"
+                                    android:textSize="16dp"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp" />
+                            </TableRow>
+                        </TableLayout>
+
+                        <TableLayout>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/fdo"
+                                    android:layout_width="130dp"
+                                    android:layout_height="50dp"
+                                    android:text="不稀釋"
+                                    android:textSize="16dp"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"/>
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/fdo2"
+                                    android:layout_width="130dp"
+                                    android:layout_height="50dp"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="1dp"
+                                    android:layout_marginBottom="1dp"
+                                    android:background="#FFFFFF"
+                                    android:text="稀釋"
+                                    android:textSize="16dp" />
+                            </TableRow>
+                        </TableLayout>
+
+                        <TableLayout>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/ffast"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text=""
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginBottom="1dp"/>
+
+                            </TableRow>
+
+                            <TableRow>
+
+                                <TextView
+                                    android:id="@+id/ffast2"
+                                    android:layout_width="110dp"
+                                    android:layout_height="50dp"
+                                    android:text=""
+                                    android:textColor="@color/red"
+                                    android:textSize="16dp"
+                                    android:textStyle="bold"
+                                    android:background="#FFFFFF"
+                                    android:layout_marginLeft="1dp"
+                                    android:layout_marginTop="1dp"
+                                    android:layout_marginRight="2dp"
+                                    android:layout_marginBottom="1dp" />
+
+                            </TableRow>
+                        </TableLayout>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/M2"
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:text="Dormicum"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"/>
+                <TableLayout>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/mmuch"
+                            android:layout_width="110dp"
+                            android:layout_height="50dp"
+                            android:text="0.04~0.2 mg/kg/hr"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"/>
+                    </TableRow>
+                        <TableRow>
+
+                            <TextView
+                                android:id="@+id/mmuch2"
+                                android:layout_width="110dp"
+                                android:layout_height="50dp"
+                                android:text="0.04~0.2 mg/kg/hr"
+                                android:textSize="16dp"
+                                android:background="#FFFFFF"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp"/>
+                        </TableRow>
+                </TableLayout>
+                <TableLayout>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/mdo"
+                            android:layout_width="130dp"
+                            android:layout_height="50dp"
+                            android:text="不稀釋"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="1dp"/>
+                    </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/mdo2"
+                                android:layout_width="130dp"
+                                android:layout_height="50dp"
+                                android:text="稀釋"
+                                android:textSize="16dp"
+                                android:background="#FFFFFF"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginRight="1dp"
+                                android:layout_marginBottom="1dp" />
+                        </TableRow>
+                </TableLayout>
+                <TableLayout>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/mfast"
+                            android:layout_width="110dp"
+                            android:layout_height="50dp"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="1dp" />
+                    </TableRow>
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/mfast2"
+                                android:layout_width="110dp"
+                                android:layout_height="50dp"
+                                android:text=""
+                                android:textColor="@color/red"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:background="#FFFFFF"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="1dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginBottom="1dp" />
+                        </TableRow>
+                </TableLayout>
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:id="@+id/P2"
+                            android:layout_width="140dp"
+                            android:layout_height="match_parent"
+                            android:text="Propofol"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/pmuch"
+                            android:layout_width="110dp"
+                            android:layout_height="50dp"
+                            android:text="50~80 mcg/kg/min"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/pdo"
+                            android:layout_width="110dp"
+                            android:layout_height="50dp"
+                            android:text="不稀釋"
+                            android:textSize="16dp"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:layout_marginBottom="2dp"/>
+
+                        <TextView
+                            android:id="@+id/pfast"
+                            android:layout_width="110dp"
+                            android:layout_height="50dp"
+                            android:text=""
+                            android:textColor="@color/red"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:background="#FFFFFF"
+                            android:layout_marginLeft="1dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginBottom="2dp"/>
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shape"
+                    android:onClick="onClick"
+                    android:text="下一頁"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
